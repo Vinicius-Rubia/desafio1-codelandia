@@ -180,3 +180,14 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width: 450px) {
+    .content-post h3 {
+        width: 90%;
+    }
+
+    .bi-trash-fill {
+        font-size: 20px;
+        right: 25px;
+    }
+}
