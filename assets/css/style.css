@@ -165,7 +165,7 @@ body {
 /* RESPONSIVIDADE */
 @media (max-width: 450px) {
     .content-post h3 {
-        width: 90%;
+        width: 90% !important;
     }
 
     .bi-trash-fill {
