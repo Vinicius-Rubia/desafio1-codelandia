@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+    --title: #313131;
+    --text: #646464;
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.bi-trash-fill {
+    cursor: pointer;
+    color: #FF0000;
+    font-size: 25px;
+    position: absolute;
+    right: 22px;
+    top: 50px;
+    display: none;
+    transition: 0.5s;
+}
+
+.bi-trash-fill:hover {
+    display: block;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    font-size: 40px;
+    color: #02466e;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.backToTop.show {
+    visibility: visible;
+    bottom: 15px;
+    transform: translateY(0);
+}
+
+#header,
+#footer {
+    background: var(--linear);
+    padding: 25px 250px;
+    color: var(--white);
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+#header {
+    height: 250px;
+}
+
+#header .menu h2 {
+    font-family: 'Lexend Deca';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.input-search i {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.input-search input {
+    width: 100%;
+    padding: 20px 0 20px 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    outline: none;
+}
+
+.input-search input::placeholder {
+    font-family: 'Inter';
+    color: var(--white);
+    opacity: 0.7;
+}
+
+/* POST */
+.container-post {
+    padding: 50px 250px;
+}
+
+.post:hover > .bi-trash-fill {
+    display: block;
+    transition: 0.5s;
+}
+
+.post {
+    font-family: 'Lexend Deca';
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 0 25px;
+    transition: 0.5s;
+}
+
+.post:hover {
+    box-shadow: 5px 0 10px #ff000033;
+}
+
+.top-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-post span {
+    font-size: 16px;
+}
+
+.content-post h3 {
+    color: var(--title);
+    font-weight: 400;
+}
+
+.top-post,
+.content-post p {
+    padding: 20px 0;
+    color: var(--text);
+}
+
+.top-post i {
+    color: var(--blue-dark);
+    cursor: pointer;
+}
+
+.content-post p {
+    font-size: 18px;
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 320px) and (max-width: 1024px) {
+    #header,
+    #footer,
+    .container-post {
+        padding: 25px 30px;
+    }
+
+    #footer .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer .menu span {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,16 @@
+1 - Exibir os post gradativamente OK
+
+2 - scroll-top OK
+
+3 - Animação no coração - OK
+
+4 - Implementar Footer - OK
+
+5 - Habilitar um X para fechar os posts
+
+
+* - Botão "Load More" para ver mais projetos ao decorrer do scroll
+
+* - Alteração do span para "date" com js
+
+* - Cadastro com popup de formulário
