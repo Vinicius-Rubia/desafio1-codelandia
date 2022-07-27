@@ -163,6 +163,17 @@ body {
 }
 
 /* RESPONSIVIDADE */
+@media (max-width: 450px) {
+    .content-post h3 {
+        width: 90%;
+    }
+
+    .bi-trash-fill {
+        font-size: 20px;
+        right: 25px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
     #header,
     #footer,
@@ -178,16 +189,5 @@ body {
     #footer .menu span {
         margin-bottom: 10px;
         text-align: center;
-    }
-}
-
-@media (max-width: 450px) {
-    .content-post h3 {
-        width: 90%;
-    }
-
-    .bi-trash-fill {
-        font-size: 20px;
-        right: 25px;
     }
 }
